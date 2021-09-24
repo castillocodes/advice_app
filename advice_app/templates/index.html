@@ -1,5 +1,14 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<h1>You got this!</h1>
+
+<div class="container">
+    <div id="results">
+        <h1>{{ random_advice.advice }}</h1>
+    </div>
+    <form action="{% url 'index' %}" method="GET">
+
+        <button type="submit" id="getData" class="btn">Get Advice</button>
+    </form>
+</div>
 {% endblock %}

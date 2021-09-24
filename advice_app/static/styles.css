@@ -1,0 +1,45 @@
+:root {
+    --main-shadow: 1px 2px 3px rgba(0, 0, 0, 0.5);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    place-items: center;
+    text-align: center;
+    height: 50vh;
+    width: 700px;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+#results p{
+    font-size: 20px;
+}
+
+.btn {
+    background-color: teal;
+    padding: 10px;
+    display: block;
+    border: 0;
+    border-radius: 5px;
+    color: #fff;
+    outline: 0;
+    box-shadow: var(--main-shadow);
+    cursor: pointer;
+    transition: all .2s ease-in;
+    width: 100px;
+}
+
+.btn:hover {
+    background-color: green;
+    color: yellow;
+}
+
+#results {
+    padding: 20px;
+    box-shadow: var(--main-shadow);
+    margin-bottom: 30px;
+}
